@@ -85,10 +85,10 @@ Para que o front-end consuma a API de forma eficiente e entregue uma boa experi�
 
 
 
-### Tarefas para o Front-End
-* **Tela Principal (Listagem):** Criar a interface que consome o `GET /api/magias`. Renderizar as magias em formato de lista ou cards. Incluir barra de busca e filtros (por nível, classe ou escola).
-* **Tela de Detalhes:** Criar a visão expandida de uma magia, consumindo o `GET /api/magias/{id}` para mostrar todas as propriedades (Alcance, Tempo de Conjuração, Componentes, Descrição Completa).
-* **Formulários (CRUD):** Implementar formulários para Criação e Edição de magias.
+## Tarefas para o Front-End
+1. **Tela Principal (Listagem):** Criar a interface que consome o `GET /api/magias`. Renderizar as magias em formato de lista ou cards. Incluir barra de busca e filtros (por nível, classe ou escola).
+2. **Tela de Detalhes:** Criar a visão expandida de uma magia, consumindo o `GET /api/magias/{id}` para mostrar todas as propriedades (Alcance, Tempo de Conjuração, Componentes, Descrição Completa).
+3. **Formulários (CRUD):** Implementar formulários para Criação e Edição de magias.
   * Realizar a validação de campos obrigatórios no lado do cliente antes de enviar o `POST` ou `PUT`.
   * Incluir um componente de seleção múltipla (Multi-select) alimentado pelo `GET /api/classes` para vincular as classes à magia.
 
