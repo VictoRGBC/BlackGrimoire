@@ -38,6 +38,12 @@ namespace Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
+        public async Task AtualizarAsync(Classe classe)
+        {
+            _context.Classes.Update(classe);
+            await _context.SaveChangesAsync();
+        }
+
         public async Task DeletarAsync(int id)
         {
             var classe = await _context.Classes.FindAsync(id);

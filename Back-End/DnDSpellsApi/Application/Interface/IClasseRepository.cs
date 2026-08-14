@@ -10,6 +10,7 @@ namespace Application.Interface
         Task<IEnumerable<Classe>> ObterTodasAsync();
         Task<Classe?> ObterPorIdAsync(int id);
         Task AdicionarAsync(Classe classe);
+        Task AtualizarAsync(Classe classe);
         Task DeletarAsync(int id);
     }
 }

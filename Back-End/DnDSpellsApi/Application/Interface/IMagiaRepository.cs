@@ -10,6 +10,7 @@ namespace Application.Interface
         Task<IEnumerable<Magia>> ObterTodasAsync();
         Task<Magia?> ObterPorIdAsync(int id);
         Task AdicionarAsync(Magia magia);
+        Task AtualizarAsync(Magia magia);
         Task DeletarAsync(int id);
     }
 }

@@ -1,4 +1,5 @@
 using Application.Interface;
+using Application.Services;
 using Infrastructure.Context;
 using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +18,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IMagiaRepository, MagiaRepository>();
 builder.Services.AddScoped<IClasseRepository, ClasseRepository>();
+
+builder.Services.AddScoped<IMagiaService, MagiaService>();
+builder.Services.AddScoped<IClasseService, ClasseService>();
 
 var app = builder.Build();
 

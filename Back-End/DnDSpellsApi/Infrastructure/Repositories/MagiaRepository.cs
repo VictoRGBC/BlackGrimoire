@@ -38,6 +38,12 @@ namespace Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
+        public async Task AtualizarAsync(Magia magia)
+        {
+            _context.Magias.Update(magia);
+            await _context.SaveChangesAsync();
+        }
+
         public async Task DeletarAsync(int id)
         {
             var magia = await _context.Magias.FindAsync(id);
