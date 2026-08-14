@@ -1,4 +1,6 @@
+using Application.Interface;
 using Infrastructure.Context;
+using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +14,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<IMagiaRepository, MagiaRepository>();
+builder.Services.AddScoped<IClasseRepository, ClasseRepository>();
 
 var app = builder.Build();
 
