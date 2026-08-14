@@ -1,6 +1,0 @@
-@SpellsApi_HostAddress = http://localhost:5267
-
-GET {{SpellsApi_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
