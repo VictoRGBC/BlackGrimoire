@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="DnDSpells.Api/DnDSpells.Api.csproj" />
+  <Project Path="DnDSpells.Application/DnDSpells.Application.csproj" />
+  <Project Path="DnDSpells.Domain/DnDSpells.Domain.csproj" />
+  <Project Path="DnDSpells.Infrastructure/DnDSpells.Infrastructure.csproj" />
+</Solution>
